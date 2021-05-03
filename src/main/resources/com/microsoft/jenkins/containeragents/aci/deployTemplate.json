@@ -9,7 +9,8 @@
     "cpu": "",
     "memory": "",
     "osType": "",
-    "jenkinsInstance": ""
+    "jenkinsInstance": "",
+    "ipType": ""
   },
   "resources": [
     {
