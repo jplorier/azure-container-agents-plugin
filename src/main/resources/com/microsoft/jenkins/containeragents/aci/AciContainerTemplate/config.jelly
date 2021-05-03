@@ -51,9 +51,8 @@
     </f:entry>
 
     <ui:dropdownList selectedName="ipType" title="${%IP_Type}" name="ipType">
-        <f:dropdownListBlock title="Private" value="Private" selected="${instance == null || instance.ipType() == 'Private'}"/>
-
-        <f:dropdownListBlock title="Public" value="Public" selected="${instance != null &amp;&amp; instance.ipType() == 'Public'}">
+        <f:dropdownListBlock title="Public" value="Public" selected="${instance == null || instance.ipType() == 'Public'}">
+        <f:dropdownListBlock title="Private" value="Private" selected="${instance != null &amp;&amp; instance.ipType() == 'Private'}"/>
     </ui:dropdownList>    
 
     <ui:dropdownList selectedName="launchMethodType" title="${%Launch_Method}" name="launchMethodTypeContent">
