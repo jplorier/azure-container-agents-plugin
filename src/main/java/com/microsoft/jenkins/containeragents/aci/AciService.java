@@ -57,6 +57,7 @@ public final class AciService {
             ObjectNode.class.cast(tmp.get("variables")).put("containerName", agent.getNodeName());
             ObjectNode.class.cast(tmp.get("variables")).put("containerImage", template.getImage());
             ObjectNode.class.cast(tmp.get("variables")).put("osType", template.getOsType());
+            ObjectNode.class.cast(tmp.get("variables")).put("ipType", template.getIpType());
             ObjectNode.class.cast(tmp.get("variables")).put("cpu", template.getCpu());
             ObjectNode.class.cast(tmp.get("variables")).put("memory", template.getMemory());
             ObjectNode.class.cast(tmp.get("variables")).put("jenkinsInstance",
